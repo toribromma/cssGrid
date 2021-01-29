@@ -110,7 +110,7 @@ body {
 
 @media (min-width: 1020px) {
   .task-3-1 .header {
-   
+   grid-column: 1 / span 12;
   }
 
   .task-3-1 .navigation {
@@ -208,6 +208,11 @@ body {
 /* Task 4 */
 
 .task-4.container {
+  display: grid;
+  gap: 24px;
+
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
 }
 
 .task-4 .item-5 {
